@@ -3,7 +3,9 @@
 ============
 #### Contacts
 *email*:  max_air@bk
+====
 *tel*: 8(044)516-40-07
+====
 *GitHub*: MaksimDolgonosov
 ============
 #### About me:
@@ -17,7 +19,6 @@ I started courses in RSschool for getting new skills in front end development.
 ============
 #### Code
 ```
-
 function addZero(n) {
         let number;
         if (n < 9) {
@@ -28,14 +29,13 @@ function addZero(n) {
         return number;
     }
 ``` 
-
 ============
 #### Expierence
 My first own project: (https://createmax.site/formula/index.html)
 ============
 #### Education
 * Belarusian National Technical University (Faculty of Energy)
-* courses Udemy:
+* courses Udemy academy
 ============
 #### English
 A2 (I have been stying English in school, university and got some practice in USA during student exchange program)
