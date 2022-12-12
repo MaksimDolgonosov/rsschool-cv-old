@@ -2,15 +2,18 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
 body {
-    position: relative
+    position: relative;
+    background-color: rgb(236, 234, 234);
 }
 
 .container {
     width: 1140px;
     margin: 0 auto;
+    /* background-color: rgb(255, 255, 255); */
 }
 
 .sidepanel {
@@ -26,26 +29,36 @@ body {
 
 .sidepanel a {
     margin-top: 5px;
+    transition: .5s all;
+
+}
+
+
+.sidepanel a:hover {
+    transform: scale(1.3);
+    transition: .5s all;
 }
 
 .sidepanel__divider {
     height: 70px;
     width: 2px;
     background-color: #ffa501;
+    
 }
 
 .sidepanel__text {
     height: 250px;
-    /* width: 50px; */
-    font-weight: 600;
-    font-size: 20px;
-    /* line-height: 24px; */
+    font-weight: 500;
+    font-size: 18px;
+
+
 }
 
 .sidepanel__text span {
     display: block;
     transform: rotate(-90deg) translateX(-60px) translateY(-1px);
-    color: #ffa501
+    color: #ffa501;
+    text-shadow: 0 1px 1px #3b3b3b;
 }
 
 .promo {
@@ -58,7 +71,7 @@ body {
 .promo__subtitle {
     margin-top: 120px;
     position: relative;
-    font-size: 24px;
+    font-size: 20px;
     color: rgb(237, 253, 253);
     font-weight: 700;
     z-index: 10;
@@ -80,7 +93,7 @@ body {
 
 .promo__title {
     padding-top: 10px;
-    font-size: 64px;
+    font-size: 58px;
     color: rgb(237, 253, 253);
     font-weight: 700;
 }
@@ -98,7 +111,7 @@ body {
     height: 100%;
     width: 20%;
     padding-left: 30px;
-    
+
 }
 
 .menu__logo img {
@@ -134,8 +147,9 @@ body {
 
 .descr__img {
     width: 45%;
-    
+
 }
+
 .descr__aboutMe {
     position: relative;
     width: 50%;
@@ -163,11 +177,13 @@ body {
 .descr__flexContainer {
     display: flex;
     justify-content: space-between;
-     
+
 }
+
 .descr__subtitle {
     z-index: 10;
 }
+
 .descr__subtitle::before {
     content: "";
     position: absolute;
@@ -179,6 +195,9 @@ body {
     top: -5px;
     left: -15px;
 }
+
 .descr__text {
     margin-top: 20px;
+    font-size: 18px;
+    text-indent: 15px;
 }
