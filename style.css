@@ -7,13 +7,45 @@
 body {
     position: relative
 }
+
 .container {
     width: 1140px;
     margin: 0 auto;
 }
 
 .sidepanel {
-    display: none;
+    /* height: 240px; */
+    top: 230px;
+    left: 52px;
+    position: fixed;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sidepanel a {
+    margin-top: 5px;
+}
+
+.sidepanel__divider {
+    height: 70px;
+    width: 2px;
+    background-color: #ffa501;
+}
+
+.sidepanel__text {
+    height: 250px;
+    /* width: 50px; */
+    font-weight: 600;
+    font-size: 20px;
+    /* line-height: 24px; */
+}
+
+.sidepanel__text span {
+    display: block;
+    transform: rotate(-90deg) translateX(-60px) translateY(-1px);
+    color: #ffa501
 }
 
 .promo {
@@ -26,7 +58,7 @@ body {
 .promo__subtitle {
     margin-top: 120px;
     position: relative;
-    font-size: 16px;
+    font-size: 24px;
     color: rgb(237, 253, 253);
     font-weight: 700;
     z-index: 10;
@@ -42,13 +74,13 @@ body {
     background-color: #ffa501;
     border-radius: 100%;
     z-index: -1;
-    top: -35%;
+    top: -5px;
     left: -10px;
 }
 
 .promo__title {
     padding-top: 10px;
-    font-size: 48px;
+    font-size: 64px;
     color: rgb(237, 253, 253);
     font-weight: 700;
 }
@@ -66,7 +98,7 @@ body {
     height: 100%;
     width: 20%;
     padding-left: 30px;
-
+    
 }
 
 .menu__logo img {
@@ -98,4 +130,55 @@ body {
 
 .menu__link a:hover {
     color: rgb(255, 165, 1);
+}
+
+.descr__img {
+    width: 45%;
+    
+}
+.descr__aboutMe {
+    position: relative;
+    width: 50%;
+}
+
+.descr__img img {
+    width: 100%;
+    box-shadow: 0 5px 10px #3b3b3b;
+}
+
+.descr__title {
+    margin-top: 25px;
+    text-align: center;
+    font-size: 42px;
+}
+
+.descr__line {
+    width: 50%;
+    height: 3px;
+    background-color: #ffa501;
+    border-radius: 40%;
+    margin: 30px auto;
+}
+
+.descr__flexContainer {
+    display: flex;
+    justify-content: space-between;
+     
+}
+.descr__subtitle {
+    z-index: 10;
+}
+.descr__subtitle::before {
+    content: "";
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    background-color: #ffa501;
+    border-radius: 100%;
+    z-index: -1;
+    top: -5px;
+    left: -15px;
+}
+.descr__text {
+    margin-top: 20px;
 }
